@@ -16,12 +16,18 @@ def spin_wheel(spaces):
 def play_game():
     spaces = generate_wheel()
 
+    x = 0
     money = 1000
 
     while True:
         print("you have $ " + str(money))
 
-        bet = int(input("how much do you want to bet? "))
+        while x == 0:
+            bet = int(input("how much do you want to bet? "))
+            if bet > money:
+                print("You don't have that much money.")
+            else:
+                x = 1
         color = input("What color do you want to bet on? ")
 
         print("The wheel is spinning....")
