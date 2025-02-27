@@ -1,3 +1,0 @@
-menu = { "Pizza": 1.99, "Soda":  0.69, "Double Chunk Chocolate Chip Cookie": 2.49}
-
-def temp(item,price):
